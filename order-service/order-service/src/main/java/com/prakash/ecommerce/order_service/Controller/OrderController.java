@@ -22,6 +22,12 @@ public class OrderController {
     private final OrderService orderService;
 
 
+
+    @GetMapping("/hellorders")
+    public String fetchOrder(){
+        return "Hello order from [ Order-Service ].";
+    }
+
     @GetMapping("/test")
     public ResponseEntity<String> tsetController() {
         return ResponseEntity.ok("Order Controller working");
