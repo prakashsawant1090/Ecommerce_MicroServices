@@ -31,13 +31,14 @@ public class ProductController {
     }
 
 
+
     @GetMapping("/fetchOrder")
     public String fetchOrders() {
 
         ServiceInstance orderInstance = discoveryClient.getInstances("order-service").getFirst();
 
         return  restClient.get()
-                .uri(orderInstance.getUri()+"/api/v1/orders/hellorders")
+                .uri(orderInstance.getUri()+"/orders/core/hellorders")
                 .retrieve()
                 .body(String.class);
 
