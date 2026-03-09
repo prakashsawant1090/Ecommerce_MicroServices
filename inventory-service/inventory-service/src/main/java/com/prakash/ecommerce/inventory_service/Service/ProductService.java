@@ -1,10 +1,14 @@
 package com.prakash.ecommerce.inventory_service.Service;
 
+import com.prakash.ecommerce.inventory_service.Dto.OrderRequestDto;
+import com.prakash.ecommerce.inventory_service.Dto.OrderRequestItemDto;
 import com.prakash.ecommerce.inventory_service.Dto.ProductDto;
 import com.prakash.ecommerce.inventory_service.Entity.Product;
 import com.prakash.ecommerce.inventory_service.Repository.ProductRepo;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.hibernate.query.Order;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
@@ -33,5 +37,32 @@ public class ProductService {
         Optional<Product> inventory = productRepository.findById(id);
         return inventory.map(item -> modelMapper.map(item, ProductDto.class))
                 .orElseThrow(() -> new RuntimeException("Inventory not found"));
+    }
+
+    @Transactional
+    public Double reduceStock(OrderRequestDto orderRequestDto) {
+        Double totalPrice = 0.0;
+        log.info("Reducing stock....");
+
+        for(OrderRequestItemDto orderRequestItem : orderRequestDto.getItems()){
+
+            Long id = orderRequestItem.getProductId();
+            Integer quantity = orderRequestItem.getQuantity();
+
+                Product product = productRepository.findById(id).
+                        orElseThrow(()->new RuntimeException("Item not found with id "+id));
+
+                if(quantity > product.getStock())
+                    throw new RuntimeException(product.getName()+" stock not available");
+
+                totalPrice+=quantity*product.getPrice();
+
+                product.setStock(product.getStock() - quantity);
+
+                productRepository.save(product);
+
+        }
+
+        return totalPrice;
     }
 }
