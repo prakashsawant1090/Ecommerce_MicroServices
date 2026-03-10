@@ -6,6 +6,8 @@ import com.prakash.ecommerce.order_service.Entity.OrderItem;
 import com.prakash.ecommerce.order_service.Entity.enums.OrderStatus;
 import com.prakash.ecommerce.order_service.FeignClients.InventoryFeignClient;
 import com.prakash.ecommerce.order_service.Repository.OrderRepo;
+import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
+import io.github.resilience4j.retry.annotation.Retry;
 import jakarta.transaction.Transactional;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -37,7 +39,10 @@ public class OrderService {
     }
 
     @Transactional
+    @Retry(name = "inventoryRetry",fallbackMethod = "inventoryRetryFallBack")
+    @RateLimiter(name = "inventoryRateLimiter",fallbackMethod = "inventoryRetryFallBack")
     public OrderRequestDto createorder(OrderRequestDto orderRequestDto) {
+        log.info("trying to crete the order");
         Double price = inventoryFeignClient.reduceStock(orderRequestDto);
 
         Order order = modelMapper.map(orderRequestDto,Order.class);
@@ -54,4 +59,17 @@ public class OrderService {
         return modelMapper.map(savedorder,OrderRequestDto.class);
 
     }
+
+
+    public OrderRequestDto inventoryRetryFallBack(OrderRequestDto orderRequestDto,Throwable throwable) {
+
+        log.info("inventoryRetryFallBack called..");
+
+        log.info("API  failed due to {} ",throwable.getLocalizedMessage());
+
+        return new OrderRequestDto();
+
+    }
+
+
 }
