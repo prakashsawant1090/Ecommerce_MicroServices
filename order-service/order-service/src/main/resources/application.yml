@@ -13,4 +13,13 @@ resilience4j:
         timeOutDuration: 2s
 
 
+  circuitbreaker:
+    instances:
+      inventoryCircketBreaker:
+        slidingWindowSize: 10
+        failureRateThreshold: 50
+        waitDurationInOpenState: 10s
+        permittedNumberOfCallsInHalfOpenState: 3
+
+
 

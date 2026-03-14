@@ -6,6 +6,7 @@ import com.prakash.ecommerce.order_service.Entity.OrderItem;
 import com.prakash.ecommerce.order_service.Entity.enums.OrderStatus;
 import com.prakash.ecommerce.order_service.FeignClients.InventoryFeignClient;
 import com.prakash.ecommerce.order_service.Repository.OrderRepo;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
 import io.github.resilience4j.retry.annotation.Retry;
 import jakarta.transaction.Transactional;
@@ -39,8 +40,9 @@ public class OrderService {
     }
 
     @Transactional
-    @Retry(name = "inventoryRetry",fallbackMethod = "inventoryRetryFallBack")
-    @RateLimiter(name = "inventoryRateLimiter",fallbackMethod = "inventoryRetryFallBack")
+    //@Retry(name = "inventoryRetry",fallbackMethod = "inventoryRetryFallBack")
+   // @RateLimiter(name = "inventoryRateLimiter",fallbackMethod = "inventoryRetryFallBack")
+    @CircuitBreaker(name = "inventoryCircketBreaker",fallbackMethod = "inventoryRetryFallBack")
     public OrderRequestDto createorder(OrderRequestDto orderRequestDto) {
         log.info("trying to crete the order");
         Double price = inventoryFeignClient.reduceStock(orderRequestDto);
