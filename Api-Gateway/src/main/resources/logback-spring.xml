@@ -1,0 +1,45 @@
+<configuration>
+
+    <springProperty name="applicationName" source="spring.application.name" defaultValue="UNKNOWN"/>
+
+    <!-- Console Appender -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] [%X{traceId:-N/A}-%X{spanId:-N/A}] %-5level ${applicationName}-%logger{36}.%M - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!-- Rolling File Appender -->
+    <appender name="ROLLING-FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+
+        <!-- Rolling policy -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+
+            <!-- Daily log file -->
+            <fileNamePattern>logs/${applicationName}/application-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+
+            <!-- File size -->
+            <maxFileSize>10MB</maxFileSize>
+
+            <!-- Keep logs for 30 days -->
+            <maxHistory>30</maxHistory>
+
+        </rollingPolicy>
+
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>
+                %d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] [%X{traceId:-N/A}-%X{spanId:-N/A}] %-5level ${applicationName}-%logger{36}.%M - %msg%n
+            </pattern>
+        </encoder>
+
+    </appender>
+
+    <!-- Root Logger -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="ROLLING-FILE"/>
+    </root>
+
+</configuration>

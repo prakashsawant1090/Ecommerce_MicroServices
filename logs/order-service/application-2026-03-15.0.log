@@ -1,0 +1,546 @@
+15-03-2026 15:49:10.645 [main] [-] INFO  order-service-c.p.e.o.OrderServiceApplication.logStarting - Starting OrderServiceApplication using Java 21.0.9 with PID 23392 (C:\SpringBoot\Microservices_SB\Ecommerce_MicroServices\order-service\order-service\target\classes started by praka in C:\SpringBoot\Microservices_SB\Ecommerce_MicroServices)
+15-03-2026 15:49:10.651 [main] [-] INFO  order-service-c.p.e.o.OrderServiceApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+15-03-2026 15:49:12.802 [main] [-] INFO  order-service-o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15-03-2026 15:49:13.021 [main] [-] INFO  order-service-o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 199 ms. Found 1 JPA repository interface.
+15-03-2026 15:49:13.642 [main] [-] INFO  order-service-o.s.cloud.context.scope.GenericScope.setSerializationId - BeanFactory id=72c799fb-96c9-3520-b6bf-b68b4c0ba28e
+15-03-2026 15:49:14.139 [main] [-] WARN  order-service-o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+15-03-2026 15:49:14.148 [main] [-] WARN  order-service-o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+15-03-2026 15:49:14.947 [main] [-] INFO  order-service-o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port 9020 (http)
+15-03-2026 15:49:14.963 [main] [-] INFO  order-service-o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-9020"]
+15-03-2026 15:49:14.970 [main] [-] INFO  order-service-o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+15-03-2026 15:49:14.970 [main] [-] INFO  order-service-o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/10.1.30]
+15-03-2026 15:49:15.103 [main] [-] INFO  order-service-o.a.c.c.C.[.[localhost].[/orders].log - Initializing Spring embedded WebApplicationContext
+15-03-2026 15:49:15.104 [main] [-] INFO  order-service-o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 4326 ms
+15-03-2026 15:49:16.873 [main] [-] INFO  order-service-com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+15-03-2026 15:49:17.254 [main] [-] INFO  order-service-com.zaxxer.hikari.pool.HikariPool.checkFailFast - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@731fae
+15-03-2026 15:49:17.257 [main] [-] INFO  order-service-com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+15-03-2026 15:49:17.402 [main] [-] INFO  order-service-o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+15-03-2026 15:49:17.466 [main] [-] INFO  order-service-org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 6.5.3.Final
+15-03-2026 15:49:17.505 [main] [-] INFO  order-service-o.h.c.i.RegionFactoryInitiator.initiateService - HHH000026: Second-level cache disabled
+15-03-2026 15:49:18.003 [main] [-] INFO  order-service-o.s.o.j.p.SpringPersistenceUnitInfo.addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+15-03-2026 15:49:19.271 [main] [-] INFO  order-service-o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+15-03-2026 15:49:19.290 [main] [-] WARN  order-service-o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - SQL Warning Code: 0, SQLState: 00000
+15-03-2026 15:49:19.290 [main] [-] WARN  order-service-o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - relation "order_item" does not exist, skipping
+15-03-2026 15:49:19.291 [main] [-] WARN  order-service-o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - SQL Warning Code: 0, SQLState: 00000
+15-03-2026 15:49:19.291 [main] [-] WARN  order-service-o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - table "order_item" does not exist, skipping
+15-03-2026 15:49:19.291 [main] [-] WARN  order-service-o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - SQL Warning Code: 0, SQLState: 00000
+15-03-2026 15:49:19.292 [main] [-] WARN  order-service-o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - table "orders" does not exist, skipping
+15-03-2026 15:49:19.328 [main] [-] INFO  order-service-o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15-03-2026 15:49:19.952 [main] [-] WARN  order-service-o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15-03-2026 15:49:20.199 [main] [-] INFO  order-service-o.s.c.o.FeignClientFactoryBean.getTarget - For 'inventory-service' URL not provided. Will try picking an instance via load-balancing.
+15-03-2026 15:49:21.840 [main] [-] INFO  order-service-o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration.restTemplateDiscoveryClientOptionalArgs - Eureka HTTP Client uses RestTemplate.
+15-03-2026 15:49:21.868 [main] [-] WARN  order-service-o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger.afterPropertiesSet - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+15-03-2026 15:49:21.883 [main] [-] INFO  order-service-o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 25 endpoints beneath base path '/actuator'
+15-03-2026 15:49:21.945 [main] [-] INFO  order-service-o.s.c.n.eureka.InstanceInfoFactory.create - Setting initial instance status as: STARTING
+15-03-2026 15:49:21.963 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.<init> - Initializing Eureka in region us-east-1
+15-03-2026 15:49:21.966 [main] [-] INFO  order-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+15-03-2026 15:49:21.972 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Disable delta property : false
+15-03-2026 15:49:21.972 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Single vip registry refresh property : null
+15-03-2026 15:49:21.972 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Force full registry fetch : false
+15-03-2026 15:49:21.972 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Application is null : false
+15-03-2026 15:49:21.972 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Registered Applications size is zero : true
+15-03-2026 15:49:21.972 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Application version is -1: true
+15-03-2026 15:49:21.972 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - Getting all instance registry info from the eureka server
+15-03-2026 15:49:22.133 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - The response status is 200
+15-03-2026 15:49:22.134 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.initScheduledTasks - Starting heartbeat executor: renew interval is: 30
+15-03-2026 15:49:22.136 [main] [-] INFO  order-service-c.n.discovery.InstanceInfoReplicator.<init> - InstanceInfoReplicator onDemand update allowed rate per min is 4
+15-03-2026 15:49:22.137 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.<init> - Discovery Client initialized at timestamp 1773569962136 with initial instances count: 0
+15-03-2026 15:49:22.143 [main] [-] INFO  order-service-o.s.c.n.e.s.EurekaServiceRegistry.register - Registering application ORDER-SERVICE with eureka with status UP
+15-03-2026 15:49:22.143 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1773569962143, current=UP, previous=STARTING]
+15-03-2026 15:49:22.144 [main] [-] INFO  order-service-o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-9020"]
+15-03-2026 15:49:22.144 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_ORDER-SERVICE/order-service:9020: registering service...
+15-03-2026 15:49:22.160 [main] [-] INFO  order-service-o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port 9020 (http) with context path '/orders'
+15-03-2026 15:49:22.161 [main] [-] INFO  order-service-o.s.c.n.e.s.EurekaAutoServiceRegistration.onApplicationEvent - Updating port to 9020
+15-03-2026 15:49:22.180 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_ORDER-SERVICE/order-service:9020 - registration status: 204
+15-03-2026 15:49:22.183 [main] [-] INFO  order-service-c.p.e.o.OrderServiceApplication.logStarted - Started OrderServiceApplication in 12.4 seconds (process running for 12.994)
+15-03-2026 15:49:23.152 [AsyncReporter{ZipkinRestTemplateSender{http://localhost:9411/api/v2/spans}}] [-] WARN  order-service-z.r.i.AsyncReporter$BoundedAsyncReporter.flush - Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+15-03-2026 15:49:23.153 [AsyncReporter{ZipkinRestTemplateSender{http://localhost:9411/api/v2/spans}}] [-] WARN  order-service-z.r.i.AsyncReporter$BoundedAsyncReporter.flush - Dropped 2 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": Connect to http://localhost:9411 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt)
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connect to http://localhost:9411 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:915)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:895)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:830)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:691)
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinRestTemplateSender.postSpans(ZipkinRestTemplateSender.java:50)
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:69)
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:41)
+	at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123)
+	at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266)
+	at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:9411 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:690)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:91)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:90)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:123)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:189)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:450)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:889)
+	... 9 common frames omitted
+15-03-2026 15:49:52.148 [DiscoveryClient-CacheRefreshExecutor-%d] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Disable delta property : false
+15-03-2026 15:49:52.149 [DiscoveryClient-CacheRefreshExecutor-%d] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Single vip registry refresh property : null
+15-03-2026 15:49:52.149 [DiscoveryClient-CacheRefreshExecutor-%d] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Force full registry fetch : false
+15-03-2026 15:49:52.149 [DiscoveryClient-CacheRefreshExecutor-%d] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Application is null : false
+15-03-2026 15:49:52.150 [DiscoveryClient-CacheRefreshExecutor-%d] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Registered Applications size is zero : true
+15-03-2026 15:49:52.150 [DiscoveryClient-CacheRefreshExecutor-%d] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Application version is -1: false
+15-03-2026 15:49:52.150 [DiscoveryClient-CacheRefreshExecutor-%d] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - Getting all instance registry info from the eureka server
+15-03-2026 15:49:52.177 [DiscoveryClient-CacheRefreshExecutor-%d] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - The response status is 200
+15-03-2026 15:52:32.680 [SpringApplicationShutdownHook] [-] INFO  order-service-o.s.c.n.e.s.EurekaServiceRegistry.deregister - Unregistering application ORDER-SERVICE with eureka with status DOWN
+15-03-2026 15:52:32.681 [SpringApplicationShutdownHook] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1773570152681, current=DOWN, previous=UP]
+15-03-2026 15:52:32.681 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_ORDER-SERVICE/order-service:9020: registering service...
+15-03-2026 15:52:32.691 [SpringApplicationShutdownHook] [-] INFO  order-service-o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+15-03-2026 15:52:32.695 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_ORDER-SERVICE/order-service:9020 - registration status: 204
+15-03-2026 15:52:32.709 [SpringApplicationShutdownHook] [-] INFO  order-service-com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+15-03-2026 15:52:32.715 [SpringApplicationShutdownHook] [-] INFO  order-service-com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+15-03-2026 15:52:33.321 [SpringApplicationShutdownHook] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.shutdown - Shutting down DiscoveryClient ...
+15-03-2026 15:52:36.330 [SpringApplicationShutdownHook] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.unregister - Unregistering ...
+15-03-2026 15:52:36.358 [SpringApplicationShutdownHook] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.unregister - DiscoveryClient_ORDER-SERVICE/order-service:9020 - deregister  status: 200
+15-03-2026 15:52:36.360 [SpringApplicationShutdownHook] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.shutdown - Completed shut down of DiscoveryClient
+15-03-2026 15:52:39.118 [main] [-] INFO  order-service-c.p.e.o.OrderServiceApplication.logStarting - Starting OrderServiceApplication using Java 21.0.9 with PID 22248 (C:\SpringBoot\Microservices_SB\Ecommerce_MicroServices\order-service\order-service\target\classes started by praka in C:\SpringBoot\Microservices_SB\Ecommerce_MicroServices)
+15-03-2026 15:52:39.124 [main] [-] INFO  order-service-c.p.e.o.OrderServiceApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+15-03-2026 15:52:41.285 [main] [-] INFO  order-service-o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15-03-2026 15:52:41.462 [main] [-] INFO  order-service-o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 168 ms. Found 1 JPA repository interface.
+15-03-2026 15:52:42.157 [main] [-] INFO  order-service-o.s.cloud.context.scope.GenericScope.setSerializationId - BeanFactory id=72c799fb-96c9-3520-b6bf-b68b4c0ba28e
+15-03-2026 15:52:42.680 [main] [-] WARN  order-service-o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+15-03-2026 15:52:42.691 [main] [-] WARN  order-service-o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+15-03-2026 15:52:43.485 [main] [-] INFO  order-service-o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port 9020 (http)
+15-03-2026 15:52:43.499 [main] [-] INFO  order-service-o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-9020"]
+15-03-2026 15:52:43.504 [main] [-] INFO  order-service-o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+15-03-2026 15:52:43.504 [main] [-] INFO  order-service-o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/10.1.30]
+15-03-2026 15:52:43.623 [main] [-] INFO  order-service-o.a.c.c.C.[.[localhost].[/orders].log - Initializing Spring embedded WebApplicationContext
+15-03-2026 15:52:43.624 [main] [-] INFO  order-service-o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 4387 ms
+15-03-2026 15:52:45.491 [main] [-] INFO  order-service-com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+15-03-2026 15:52:45.931 [main] [-] INFO  order-service-com.zaxxer.hikari.pool.HikariPool.checkFailFast - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4aea57dc
+15-03-2026 15:52:45.933 [main] [-] INFO  order-service-com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+15-03-2026 15:52:46.083 [main] [-] INFO  order-service-o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+15-03-2026 15:52:46.145 [main] [-] INFO  order-service-org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 6.5.3.Final
+15-03-2026 15:52:46.196 [main] [-] INFO  order-service-o.h.c.i.RegionFactoryInitiator.initiateService - HHH000026: Second-level cache disabled
+15-03-2026 15:52:46.770 [main] [-] INFO  order-service-o.s.o.j.p.SpringPersistenceUnitInfo.addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+15-03-2026 15:52:47.824 [main] [-] INFO  order-service-o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+15-03-2026 15:52:47.840 [main] [-] WARN  order-service-o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - SQL Warning Code: 0, SQLState: 00000
+15-03-2026 15:52:47.840 [main] [-] WARN  order-service-o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - relation "order_item" does not exist, skipping
+15-03-2026 15:52:47.842 [main] [-] WARN  order-service-o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - SQL Warning Code: 0, SQLState: 00000
+15-03-2026 15:52:47.842 [main] [-] WARN  order-service-o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - table "order_item" does not exist, skipping
+15-03-2026 15:52:47.842 [main] [-] WARN  order-service-o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - SQL Warning Code: 0, SQLState: 00000
+15-03-2026 15:52:47.842 [main] [-] WARN  order-service-o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - table "orders" does not exist, skipping
+15-03-2026 15:52:47.860 [main] [-] INFO  order-service-o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15-03-2026 15:52:48.457 [main] [-] WARN  order-service-o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15-03-2026 15:52:48.573 [main] [-] INFO  order-service-o.s.c.o.FeignClientFactoryBean.getTarget - For 'inventory-service' URL not provided. Will try picking an instance via load-balancing.
+15-03-2026 15:52:50.166 [main] [-] INFO  order-service-o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration.restTemplateDiscoveryClientOptionalArgs - Eureka HTTP Client uses RestTemplate.
+15-03-2026 15:52:50.205 [main] [-] WARN  order-service-o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger.afterPropertiesSet - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+15-03-2026 15:52:50.222 [main] [-] INFO  order-service-o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 25 endpoints beneath base path '/actuator'
+15-03-2026 15:52:50.276 [main] [-] INFO  order-service-o.s.c.n.eureka.InstanceInfoFactory.create - Setting initial instance status as: STARTING
+15-03-2026 15:52:50.292 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.<init> - Initializing Eureka in region us-east-1
+15-03-2026 15:52:50.295 [main] [-] INFO  order-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+15-03-2026 15:52:50.302 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Disable delta property : false
+15-03-2026 15:52:50.302 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Single vip registry refresh property : null
+15-03-2026 15:52:50.302 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Force full registry fetch : false
+15-03-2026 15:52:50.302 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Application is null : false
+15-03-2026 15:52:50.302 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Registered Applications size is zero : true
+15-03-2026 15:52:50.302 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Application version is -1: true
+15-03-2026 15:52:50.303 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - Getting all instance registry info from the eureka server
+15-03-2026 15:52:50.501 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - The response status is 200
+15-03-2026 15:52:50.502 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.initScheduledTasks - Starting heartbeat executor: renew interval is: 30
+15-03-2026 15:52:50.503 [main] [-] INFO  order-service-c.n.discovery.InstanceInfoReplicator.<init> - InstanceInfoReplicator onDemand update allowed rate per min is 4
+15-03-2026 15:52:50.505 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.<init> - Discovery Client initialized at timestamp 1773570170504 with initial instances count: 2
+15-03-2026 15:52:50.513 [main] [-] INFO  order-service-o.s.c.n.e.s.EurekaServiceRegistry.register - Registering application ORDER-SERVICE with eureka with status UP
+15-03-2026 15:52:50.513 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1773570170513, current=UP, previous=STARTING]
+15-03-2026 15:52:50.514 [main] [-] INFO  order-service-o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-9020"]
+15-03-2026 15:52:50.514 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_ORDER-SERVICE/order-service:9020: registering service...
+15-03-2026 15:52:50.533 [main] [-] INFO  order-service-o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port 9020 (http) with context path '/orders'
+15-03-2026 15:52:50.534 [main] [-] INFO  order-service-o.s.c.n.e.s.EurekaAutoServiceRegistration.onApplicationEvent - Updating port to 9020
+15-03-2026 15:52:50.555 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_ORDER-SERVICE/order-service:9020 - registration status: 204
+15-03-2026 15:52:50.555 [main] [-] INFO  order-service-c.p.e.o.OrderServiceApplication.logStarted - Started OrderServiceApplication in 12.329 seconds (process running for 13.063)
+15-03-2026 15:57:50.312 [AsyncResolver-bootstrap-executor-%d] [-] INFO  order-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+15-03-2026 16:02:50.321 [AsyncResolver-bootstrap-executor-%d] [-] INFO  order-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+15-03-2026 16:07:50.329 [AsyncResolver-bootstrap-executor-%d] [-] INFO  order-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+15-03-2026 16:12:50.339 [AsyncResolver-bootstrap-executor-%d] [-] INFO  order-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+15-03-2026 16:17:50.340 [AsyncResolver-bootstrap-executor-%d] [-] INFO  order-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+Test Log from Prakash 15-03-2026 16:22:50.361 [AsyncResolver-bootstrap-executor-%d] [-] INFO  order-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+15-03-2026 16:23:38.459 [http-nio-9020-exec-1] [-] INFO  order-service-o.a.c.c.C.[.[localhost].[/orders].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15-03-2026 16:23:38.470 [http-nio-9020-exec-1] [-] INFO  order-service-o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+15-03-2026 16:23:38.519 [http-nio-9020-exec-1] [-] INFO  order-service-o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 49 ms
+15-03-2026 16:23:38.755 [http-nio-9020-exec-1] [69b68fb1dbc09d49e8a29201ec89e6f9-819dc96915ad79db] INFO  order-service-c.p.e.o.Service.OrderService.createorder - trying to crete the order
+15-03-2026 16:27:50.371 [AsyncResolver-bootstrap-executor-%d] [-] INFO  order-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+15-03-2026 16:32:50.372 [AsyncResolver-bootstrap-executor-%d] [-] INFO  order-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+15-03-2026 16:33:20.456 [SpringApplicationShutdownHook] [-] INFO  order-service-o.s.c.n.e.s.EurekaServiceRegistry.deregister - Unregistering application ORDER-SERVICE with eureka with status DOWN
+15-03-2026 16:33:20.459 [SpringApplicationShutdownHook] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1773572600459, current=DOWN, previous=UP]
+15-03-2026 16:33:20.459 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_ORDER-SERVICE/order-service:9020: registering service...
+15-03-2026 16:33:20.480 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_ORDER-SERVICE/order-service:9020 - registration status: 204
+15-03-2026 16:33:20.508 [SpringApplicationShutdownHook] [-] INFO  order-service-o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+15-03-2026 16:33:20.534 [SpringApplicationShutdownHook] [-] INFO  order-service-com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+15-03-2026 16:33:20.542 [SpringApplicationShutdownHook] [-] INFO  order-service-com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+15-03-2026 16:33:20.791 [SpringApplicationShutdownHook] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.shutdown - Shutting down DiscoveryClient ...
+15-03-2026 16:33:23.797 [SpringApplicationShutdownHook] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.unregister - Unregistering ...
+15-03-2026 16:33:23.798 [DiscoveryClient-%d] [-] WARN  order-service-c.n.discovery.TimedSupervisorTask.run - task supervisor shutting down, can't accept the task
+15-03-2026 16:33:23.808 [SpringApplicationShutdownHook] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.unregister - DiscoveryClient_ORDER-SERVICE/order-service:9020 - deregister  status: 200
+15-03-2026 16:33:23.810 [SpringApplicationShutdownHook] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.shutdown - Completed shut down of DiscoveryClient
+15-03-2026 16:33:27.684 [main] [-] INFO  order-service-c.p.e.o.OrderServiceApplication.logStarting - Starting OrderServiceApplication using Java 21.0.9 with PID 24164 (C:\SpringBoot\Microservices_SB\Ecommerce_MicroServices\order-service\order-service\target\classes started by praka in C:\SpringBoot\Microservices_SB\Ecommerce_MicroServices)
+15-03-2026 16:33:27.688 [main] [-] INFO  order-service-c.p.e.o.OrderServiceApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+15-03-2026 16:33:29.077 [main] [-] INFO  order-service-o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15-03-2026 16:33:29.181 [main] [-] INFO  order-service-o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interface.
+15-03-2026 16:33:29.639 [main] [-] INFO  order-service-o.s.cloud.context.scope.GenericScope.setSerializationId - BeanFactory id=72c799fb-96c9-3520-b6bf-b68b4c0ba28e
+15-03-2026 16:33:30.046 [main] [-] WARN  order-service-o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+15-03-2026 16:33:30.052 [main] [-] WARN  order-service-o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+15-03-2026 16:33:30.644 [main] [-] INFO  order-service-o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port 9020 (http)
+15-03-2026 16:33:30.663 [main] [-] INFO  order-service-o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-9020"]
+15-03-2026 16:33:30.668 [main] [-] INFO  order-service-o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+15-03-2026 16:33:30.669 [main] [-] INFO  order-service-o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/10.1.30]
+15-03-2026 16:33:30.758 [main] [-] INFO  order-service-o.a.c.c.C.[.[localhost].[/orders].log - Initializing Spring embedded WebApplicationContext
+15-03-2026 16:33:30.758 [main] [-] INFO  order-service-o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3006 ms
+15-03-2026 16:33:31.747 [main] [-] INFO  order-service-com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+15-03-2026 16:33:32.006 [main] [-] INFO  order-service-com.zaxxer.hikari.pool.HikariPool.checkFailFast - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1c5fd813
+15-03-2026 16:33:32.007 [main] [-] INFO  order-service-com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+15-03-2026 16:33:32.093 [main] [-] INFO  order-service-o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+15-03-2026 16:33:32.167 [main] [-] INFO  order-service-org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 6.5.3.Final
+15-03-2026 16:33:32.205 [main] [-] INFO  order-service-o.h.c.i.RegionFactoryInitiator.initiateService - HHH000026: Second-level cache disabled
+15-03-2026 16:33:32.531 [main] [-] INFO  order-service-o.s.o.j.p.SpringPersistenceUnitInfo.addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+15-03-2026 16:33:33.220 [main] [-] INFO  order-service-o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+15-03-2026 16:33:33.230 [main] [-] WARN  order-service-o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - SQL Warning Code: 0, SQLState: 00000
+15-03-2026 16:33:33.231 [main] [-] WARN  order-service-o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - relation "order_item" does not exist, skipping
+15-03-2026 16:33:33.231 [main] [-] WARN  order-service-o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - SQL Warning Code: 0, SQLState: 00000
+15-03-2026 16:33:33.232 [main] [-] WARN  order-service-o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - table "order_item" does not exist, skipping
+15-03-2026 16:33:33.232 [main] [-] WARN  order-service-o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - SQL Warning Code: 0, SQLState: 00000
+15-03-2026 16:33:33.232 [main] [-] WARN  order-service-o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - table "orders" does not exist, skipping
+15-03-2026 16:33:33.256 [main] [-] INFO  order-service-o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15-03-2026 16:33:33.759 [main] [-] WARN  order-service-o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15-03-2026 16:33:33.880 [main] [-] INFO  order-service-o.s.c.o.FeignClientFactoryBean.getTarget - For 'inventory-service' URL not provided. Will try picking an instance via load-balancing.
+15-03-2026 16:33:35.333 [main] [-] INFO  order-service-o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration.restTemplateDiscoveryClientOptionalArgs - Eureka HTTP Client uses RestTemplate.
+15-03-2026 16:33:35.375 [main] [-] WARN  order-service-o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger.afterPropertiesSet - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+15-03-2026 16:33:35.400 [main] [-] INFO  order-service-o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 25 endpoints beneath base path '/actuator'
+15-03-2026 16:33:35.456 [main] [-] INFO  order-service-o.s.c.n.eureka.InstanceInfoFactory.create - Setting initial instance status as: STARTING
+15-03-2026 16:33:35.475 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.<init> - Initializing Eureka in region us-east-1
+15-03-2026 16:33:35.478 [main] [-] INFO  order-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+15-03-2026 16:33:35.484 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Disable delta property : false
+15-03-2026 16:33:35.484 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Single vip registry refresh property : null
+15-03-2026 16:33:35.485 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Force full registry fetch : false
+15-03-2026 16:33:35.485 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Application is null : false
+15-03-2026 16:33:35.485 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Registered Applications size is zero : true
+15-03-2026 16:33:35.485 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Application version is -1: true
+15-03-2026 16:33:35.485 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - Getting all instance registry info from the eureka server
+15-03-2026 16:33:35.682 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - The response status is 200
+15-03-2026 16:33:35.683 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.initScheduledTasks - Starting heartbeat executor: renew interval is: 30
+15-03-2026 16:33:35.684 [main] [-] INFO  order-service-c.n.discovery.InstanceInfoReplicator.<init> - InstanceInfoReplicator onDemand update allowed rate per min is 4
+15-03-2026 16:33:35.685 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.<init> - Discovery Client initialized at timestamp 1773572615685 with initial instances count: 2
+15-03-2026 16:33:35.692 [main] [-] INFO  order-service-o.s.c.n.e.s.EurekaServiceRegistry.register - Registering application ORDER-SERVICE with eureka with status UP
+15-03-2026 16:33:35.692 [main] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1773572615692, current=UP, previous=STARTING]
+15-03-2026 16:33:35.693 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_ORDER-SERVICE/order-service:9020: registering service...
+15-03-2026 16:33:35.694 [main] [-] INFO  order-service-o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-9020"]
+15-03-2026 16:33:35.706 [main] [-] INFO  order-service-o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port 9020 (http) with context path '/orders'
+15-03-2026 16:33:35.707 [main] [-] INFO  order-service-o.s.c.n.e.s.EurekaAutoServiceRegistration.onApplicationEvent - Updating port to 9020
+15-03-2026 16:33:35.721 [main] [-] INFO  order-service-c.p.e.o.OrderServiceApplication.logStarted - Started OrderServiceApplication in 8.719 seconds (process running for 9.133)
+15-03-2026 16:33:35.724 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_ORDER-SERVICE/order-service:9020 - registration status: 204
+15-03-2026 16:34:55.219 [http-nio-9020-exec-1] [-] INFO  order-service-o.a.c.c.C.[.[localhost].[/orders].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15-03-2026 16:34:55.220 [http-nio-9020-exec-1] [-] INFO  order-service-o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+15-03-2026 16:34:55.224 [http-nio-9020-exec-1] [-] INFO  order-service-o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 2 ms
+15-03-2026 16:34:55.445 [http-nio-9020-exec-1] [69b6925684419914551926108f44611c-16f79d4dcd73968d] INFO  order-service-c.p.e.o.Service.OrderService.createorder - trying to crete the order
+15-03-2026 16:38:35.505 [AsyncResolver-bootstrap-executor-%d] [-] INFO  order-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+15-03-2026 16:39:58.760 [http-nio-9020-exec-5] [69b6938627d28bf6d3937b4680b74cb3-05ba223b78662fc0] INFO  order-service-c.p.e.o.Service.OrderService.createorder - trying to crete the order
+15-03-2026 16:40:22.420 [http-nio-9020-exec-6] [69b6939ea4e27ce809a3375c2b906db6-27805e8bd960b65e] INFO  order-service-c.p.e.o.Service.OrderService.createorder - trying to crete the order
+15-03-2026 16:43:35.519 [AsyncResolver-bootstrap-executor-%d] [-] INFO  order-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+15-03-2026 16:48:35.533 [AsyncResolver-bootstrap-executor-%d] [-] INFO  order-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+15-03-2026 16:53:35.536 [AsyncResolver-bootstrap-executor-%d] [-] INFO  order-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+15-03-2026 16:58:20.571 [SpringApplicationShutdownHook] [-] INFO  order-service-o.s.c.n.e.s.EurekaServiceRegistry.deregister - Unregistering application ORDER-SERVICE with eureka with status DOWN
+15-03-2026 16:58:20.572 [SpringApplicationShutdownHook] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1773574100572, current=DOWN, previous=UP]
+15-03-2026 16:58:20.572 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_ORDER-SERVICE/order-service:9020: registering service...
+15-03-2026 16:58:20.587 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_ORDER-SERVICE/order-service:9020 - registration status: 204
+15-03-2026 16:58:20.628 [SpringApplicationShutdownHook] [-] INFO  order-service-o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+15-03-2026 16:58:20.654 [SpringApplicationShutdownHook] [-] INFO  order-service-com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+15-03-2026 16:58:20.664 [SpringApplicationShutdownHook] [-] INFO  order-service-com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+15-03-2026 16:58:20.733 [SpringApplicationShutdownHook] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.shutdown - Shutting down DiscoveryClient ...
+15-03-2026 16:58:23.738 [SpringApplicationShutdownHook] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.unregister - Unregistering ...
+15-03-2026 16:58:23.758 [SpringApplicationShutdownHook] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.unregister - DiscoveryClient_ORDER-SERVICE/order-service:9020 - deregister  status: 200
+15-03-2026 16:58:23.760 [SpringApplicationShutdownHook] [-] INFO  order-service-c.netflix.discovery.DiscoveryClient.shutdown - Completed shut down of DiscoveryClient
+15-03-2026 16:58:26.491 [main] [N/A-N/A] INFO  order-service-c.p.e.o.OrderServiceApplication.logStarting - Starting OrderServiceApplication using Java 21.0.9 with PID 27312 (C:\SpringBoot\Microservices_SB\Ecommerce_MicroServices\order-service\order-service\target\classes started by praka in C:\SpringBoot\Microservices_SB\Ecommerce_MicroServices)
+15-03-2026 16:58:26.493 [main] [N/A-N/A] INFO  order-service-c.p.e.o.OrderServiceApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+15-03-2026 16:58:28.119 [main] [N/A-N/A] INFO  order-service-o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15-03-2026 16:58:28.270 [main] [N/A-N/A] INFO  order-service-o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 144 ms. Found 1 JPA repository interface.
+15-03-2026 16:58:28.798 [main] [N/A-N/A] INFO  order-service-o.s.cloud.context.scope.GenericScope.setSerializationId - BeanFactory id=72c799fb-96c9-3520-b6bf-b68b4c0ba28e
+15-03-2026 16:58:29.305 [main] [N/A-N/A] WARN  order-service-o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+15-03-2026 16:58:29.315 [main] [N/A-N/A] WARN  order-service-o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+15-03-2026 16:58:30.061 [main] [N/A-N/A] INFO  order-service-o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port 9020 (http)
+15-03-2026 16:58:30.079 [main] [N/A-N/A] INFO  order-service-o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-9020"]
+15-03-2026 16:58:30.085 [main] [N/A-N/A] INFO  order-service-o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+15-03-2026 16:58:30.085 [main] [N/A-N/A] INFO  order-service-o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/10.1.30]
+15-03-2026 16:58:30.227 [main] [N/A-N/A] INFO  order-service-o.a.c.c.C.[.[localhost].[/orders].log - Initializing Spring embedded WebApplicationContext
+15-03-2026 16:58:30.228 [main] [N/A-N/A] INFO  order-service-o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3658 ms
+15-03-2026 16:58:31.590 [main] [N/A-N/A] INFO  order-service-com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+15-03-2026 16:58:31.963 [main] [N/A-N/A] INFO  order-service-com.zaxxer.hikari.pool.HikariPool.checkFailFast - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1ddba7a0
+15-03-2026 16:58:31.965 [main] [N/A-N/A] INFO  order-service-com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+15-03-2026 16:58:32.124 [main] [N/A-N/A] INFO  order-service-o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+15-03-2026 16:58:32.233 [main] [N/A-N/A] INFO  order-service-org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 6.5.3.Final
+15-03-2026 16:58:32.288 [main] [N/A-N/A] INFO  order-service-o.h.c.i.RegionFactoryInitiator.initiateService - HHH000026: Second-level cache disabled
+15-03-2026 16:58:32.777 [main] [N/A-N/A] INFO  order-service-o.s.o.j.p.SpringPersistenceUnitInfo.addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+15-03-2026 16:58:33.889 [main] [N/A-N/A] INFO  order-service-o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+15-03-2026 16:58:33.906 [main] [N/A-N/A] WARN  order-service-o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - SQL Warning Code: 0, SQLState: 00000
+15-03-2026 16:58:33.906 [main] [N/A-N/A] WARN  order-service-o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - relation "order_item" does not exist, skipping
+15-03-2026 16:58:33.908 [main] [N/A-N/A] WARN  order-service-o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - SQL Warning Code: 0, SQLState: 00000
+15-03-2026 16:58:33.908 [main] [N/A-N/A] WARN  order-service-o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - table "order_item" does not exist, skipping
+15-03-2026 16:58:33.909 [main] [N/A-N/A] WARN  order-service-o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - SQL Warning Code: 0, SQLState: 00000
+15-03-2026 16:58:33.909 [main] [N/A-N/A] WARN  order-service-o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - table "orders" does not exist, skipping
+15-03-2026 16:58:33.934 [main] [N/A-N/A] INFO  order-service-o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15-03-2026 16:58:34.718 [main] [N/A-N/A] WARN  order-service-o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15-03-2026 16:58:34.923 [main] [N/A-N/A] INFO  order-service-o.s.c.o.FeignClientFactoryBean.getTarget - For 'inventory-service' URL not provided. Will try picking an instance via load-balancing.
+15-03-2026 16:58:36.808 [main] [N/A-N/A] INFO  order-service-o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration.restTemplateDiscoveryClientOptionalArgs - Eureka HTTP Client uses RestTemplate.
+15-03-2026 16:58:36.856 [main] [N/A-N/A] WARN  order-service-o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger.afterPropertiesSet - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+15-03-2026 16:58:36.879 [main] [N/A-N/A] INFO  order-service-o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 25 endpoints beneath base path '/actuator'
+15-03-2026 16:58:36.998 [main] [N/A-N/A] INFO  order-service-o.s.c.n.eureka.InstanceInfoFactory.create - Setting initial instance status as: STARTING
+15-03-2026 16:58:37.019 [main] [N/A-N/A] INFO  order-service-c.netflix.discovery.DiscoveryClient.<init> - Initializing Eureka in region us-east-1
+15-03-2026 16:58:37.024 [main] [N/A-N/A] INFO  order-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+15-03-2026 16:58:37.034 [main] [N/A-N/A] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Disable delta property : false
+15-03-2026 16:58:37.035 [main] [N/A-N/A] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Single vip registry refresh property : null
+15-03-2026 16:58:37.035 [main] [N/A-N/A] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Force full registry fetch : false
+15-03-2026 16:58:37.035 [main] [N/A-N/A] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Application is null : false
+15-03-2026 16:58:37.035 [main] [N/A-N/A] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Registered Applications size is zero : true
+15-03-2026 16:58:37.035 [main] [N/A-N/A] INFO  order-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Application version is -1: true
+15-03-2026 16:58:37.035 [main] [N/A-N/A] INFO  order-service-c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - Getting all instance registry info from the eureka server
+15-03-2026 16:58:37.319 [main] [N/A-N/A] INFO  order-service-c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - The response status is 200
+15-03-2026 16:58:37.321 [main] [N/A-N/A] INFO  order-service-c.netflix.discovery.DiscoveryClient.initScheduledTasks - Starting heartbeat executor: renew interval is: 30
+15-03-2026 16:58:37.323 [main] [N/A-N/A] INFO  order-service-c.n.discovery.InstanceInfoReplicator.<init> - InstanceInfoReplicator onDemand update allowed rate per min is 4
+15-03-2026 16:58:37.326 [main] [N/A-N/A] INFO  order-service-c.netflix.discovery.DiscoveryClient.<init> - Discovery Client initialized at timestamp 1773574117324 with initial instances count: 2
+15-03-2026 16:58:37.337 [main] [N/A-N/A] INFO  order-service-o.s.c.n.e.s.EurekaServiceRegistry.register - Registering application ORDER-SERVICE with eureka with status UP
+15-03-2026 16:58:37.338 [main] [N/A-N/A] INFO  order-service-c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1773574117338, current=UP, previous=STARTING]
+15-03-2026 16:58:37.340 [main] [N/A-N/A] INFO  order-service-o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-9020"]
+15-03-2026 16:58:37.340 [DiscoveryClient-InstanceInfoReplicator-%d] [N/A-N/A] INFO  order-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_ORDER-SERVICE/order-service:9020: registering service...
+15-03-2026 16:58:37.363 [main] [N/A-N/A] INFO  order-service-o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port 9020 (http) with context path '/orders'
+15-03-2026 16:58:37.364 [main] [N/A-N/A] INFO  order-service-o.s.c.n.e.s.EurekaAutoServiceRegistration.onApplicationEvent - Updating port to 9020
+15-03-2026 16:58:37.386 [DiscoveryClient-InstanceInfoReplicator-%d] [N/A-N/A] INFO  order-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_ORDER-SERVICE/order-service:9020 - registration status: 204
+15-03-2026 16:58:37.387 [main] [N/A-N/A] INFO  order-service-c.p.e.o.OrderServiceApplication.logStarted - Started OrderServiceApplication in 11.746 seconds (process running for 12.28)
+15-03-2026 16:59:41.224 [http-nio-9020-exec-1] [N/A-N/A] INFO  order-service-o.a.c.c.C.[.[localhost].[/orders].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15-03-2026 16:59:41.224 [http-nio-9020-exec-1] [N/A-N/A] INFO  order-service-o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+15-03-2026 16:59:41.230 [http-nio-9020-exec-1] [N/A-N/A] INFO  order-service-o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 4 ms
+15-03-2026 16:59:41.353 [http-nio-9020-exec-1] [69b69824a6c7bed388ef2158b3c2135c-c90d20b6afa0485e] INFO  order-service-c.p.e.o.Service.OrderService.createorder - trying to crete the order
+15-03-2026 17:01:58.069 [http-nio-9020-exec-3] [69b698ae1c0f73c1e214a28b9729a715-682a4f0d0d21fa84] INFO  order-service-c.p.e.o.Service.OrderService.createorder - trying to crete the order
+15-03-2026 17:03:37.041 [AsyncResolver-bootstrap-executor-%d] [N/A-N/A] INFO  order-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+15-03-2026 17:08:37.046 [AsyncResolver-bootstrap-executor-%d] [N/A-N/A] INFO  order-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+15-03-2026 17:08:50.924 [SpringApplicationShutdownHook] [N/A-N/A] INFO  order-service-o.s.c.n.e.s.EurekaServiceRegistry.deregister - Unregistering application ORDER-SERVICE with eureka with status DOWN
+15-03-2026 17:08:50.924 [SpringApplicationShutdownHook] [N/A-N/A] INFO  order-service-c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1773574730924, current=DOWN, previous=UP]
+15-03-2026 17:08:50.924 [DiscoveryClient-InstanceInfoReplicator-%d] [N/A-N/A] INFO  order-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_ORDER-SERVICE/order-service:9020: registering service...
+15-03-2026 17:08:50.943 [DiscoveryClient-InstanceInfoReplicator-%d] [N/A-N/A] INFO  order-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_ORDER-SERVICE/order-service:9020 - registration status: 204
+15-03-2026 17:08:50.951 [SpringApplicationShutdownHook] [N/A-N/A] INFO  order-service-o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+15-03-2026 17:08:50.967 [SpringApplicationShutdownHook] [N/A-N/A] INFO  order-service-com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+15-03-2026 17:08:50.985 [SpringApplicationShutdownHook] [N/A-N/A] INFO  order-service-com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+15-03-2026 17:08:50.993 [SpringApplicationShutdownHook] [N/A-N/A] INFO  order-service-c.netflix.discovery.DiscoveryClient.shutdown - Shutting down DiscoveryClient ...
+15-03-2026 17:08:53.999 [SpringApplicationShutdownHook] [N/A-N/A] INFO  order-service-c.netflix.discovery.DiscoveryClient.unregister - Unregistering ...
+15-03-2026 17:08:54.058 [SpringApplicationShutdownHook] [N/A-N/A] INFO  order-service-c.n.d.s.t.d.RedirectingEurekaHttpClient.execute - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/ORDER-SERVICE/order-service:9020": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ORDER-SERVICE/order-service:9020": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:915)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:895)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:790)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:672)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1156)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1102)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:690)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:91)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:90)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:123)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:189)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:450)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:112)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:170)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:889)
+	... 37 more
+
+15-03-2026 17:08:54.059 [SpringApplicationShutdownHook] [N/A-N/A] WARN  order-service-c.n.d.s.t.d.RetryableEurekaHttpClient.execute - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ORDER-SERVICE/order-service:9020": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+15-03-2026 17:08:54.108 [SpringApplicationShutdownHook] [N/A-N/A] INFO  order-service-c.n.d.s.t.d.RedirectingEurekaHttpClient.execute - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/ORDER-SERVICE/order-service:9020": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ORDER-SERVICE/order-service:9020": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:915)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:895)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:790)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:672)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1156)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1102)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:690)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:91)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:90)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:123)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:189)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:450)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:112)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:170)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:889)
+	... 38 more
+
+15-03-2026 17:08:54.109 [SpringApplicationShutdownHook] [N/A-N/A] WARN  order-service-c.n.d.s.t.d.RetryableEurekaHttpClient.execute - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ORDER-SERVICE/order-service:9020": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+15-03-2026 17:08:54.109 [SpringApplicationShutdownHook] [N/A-N/A] ERROR order-service-c.netflix.discovery.DiscoveryClient.unregister - DiscoveryClient_ORDER-SERVICE/order-service:9020 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1156)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1102)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+15-03-2026 17:08:54.111 [SpringApplicationShutdownHook] [N/A-N/A] INFO  order-service-c.netflix.discovery.DiscoveryClient.shutdown - Completed shut down of DiscoveryClient
